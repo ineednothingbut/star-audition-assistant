@@ -19,6 +19,7 @@ export default function GamePage({ params }: { params: { id: string } }) {
 
   useEffect(() => {
     loadGameSession()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [params.id])
 
   async function loadGameSession() {

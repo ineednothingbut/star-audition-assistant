@@ -61,6 +61,7 @@ export default function ScoreTable({ gameSessionId }: { gameSessionId: string })
       starRecordsChannel.unsubscribe()
       teamsChannel.unsubscribe()
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [gameSessionId])
 
   async function loadData() {

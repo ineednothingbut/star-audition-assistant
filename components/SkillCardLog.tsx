@@ -65,6 +65,7 @@ export default function SkillCardLog({ gameSessionId }: { gameSessionId: string 
       channel.unsubscribe()
       clearInterval(timer)
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [gameSessionId])
 
   async function loadLogs() {

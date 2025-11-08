@@ -114,6 +114,7 @@ export default function EditStarsPage() {
       // 中级和高级管理员加载所有游戏场
       loadGameSessions()
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router])
 
   async function loadGameSessions() {
